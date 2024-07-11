@@ -5,18 +5,9 @@ metadata:
     app: vote
   name: vote
 spec:
-  replicas: 4
-  selector:
-    matchLabels:
-      app: vote
-  strategy: {}
+  replicas: 3
   template:
-    metadata:
-      creationTimestamp: null
-      labels:
-        app: vote
     spec:
       containers:
-      - image: schoolofdevops/vote:v2
+      - image: schoolofdevops/vote:v4
         name: vote
-        resources: {}
