@@ -10,7 +10,7 @@ namespace: instavote
 
 replicas:
   - name: vote
-    count: 2
+    count: 3
 
 images:
   - name: schoolofdevops/vote
